@@ -171,20 +171,19 @@ button{
 @media screen and (max-width: 767px) and (orientation: portrait) {
     body{
         width: 100%;
-        height: 100vh;
-        background: rgb(190, 184, 184);
+        height: auto;
     }
    .container{
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 800px;
     }
     .container-left, .container-right{
         width: 100%;
-        height: 100vh;
+    }
+    .container-left{
+        height: 45%;
     }
     .btn{
         display: flex;
@@ -193,6 +192,9 @@ button{
     .container-right{
         background:#1d76e2 ;
         border-radius: 0px 0px 15px 15px;
+    }
+    .container-right p{
+        margin-top: 10px;
     }
     .score-info p{
         font-size: 20px;
@@ -204,5 +206,9 @@ button{
     .score .score-low-number{
         font-size: 18px;
         font-weight: 500;
+    }
+    .attribution{
+        position: fixed;
+        bottom: 0;
     }
   }
